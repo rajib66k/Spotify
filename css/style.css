@@ -778,8 +778,12 @@ li p {
     }
 
     .foot {
-        bottom: 85px;
+        bottom: 70px;
         width: 100%;
+    }
+
+    .Cookies1{
+        display: none;
     }
 
     .box2 {
@@ -801,11 +805,11 @@ li p {
 
     .minibox2 {
         background-color: black;
-        height: 37vh;
+        height: 42vh;
         overflow-y: hidden;
         overflow-x: hidden;
-        padding: 25px 0;
-        gap: 25px;
+        padding: 7px 0;
+        gap: 12px;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
