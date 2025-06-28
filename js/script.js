@@ -85,7 +85,7 @@ async function displayAlbums() {
     let bigalbum = document.querySelector(".bigalbum");
     Array.from(anchors).forEach(async e => {
         if (e.href.includes("/songs")) {
-            let folder = e.href.split("/").slice(-2)[0];
+            let folder = e.getAttribute('href').replace('/songs/', '').replace('/', '');
             let a = await fetch(`/Spotify/songs/${folder}/info.json`);
             let response = await a.json();
             bigalbum.innerHTML += `<div class="album" data-folder="${folder}">
