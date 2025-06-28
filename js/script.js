@@ -16,7 +16,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let response = await fetch(`http://127.0.0.1:3000/${currFolder}/`);
+    let response = await fetch(`/${currFolder}/`);
     let text = await response.text();
     let div = document.createElement("div")
     div.innerHTML = text;
@@ -81,7 +81,7 @@ function updatePlaylistUI() {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`http://127.0.0.1:3000/songs/`);
+    let a = await fetch(`/songs/`);
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -90,7 +90,7 @@ async function displayAlbums() {
     Array.from(anchors).forEach(async e => {
         if (e.href.includes("/songs")) {
             let folder = e.href.split("/").slice(-2)[0]
-            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`);
+            let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json();
             bigalbum.innerHTML = bigalbum.innerHTML + `<div class="album" data-folder="${folder}">
                         <div class="play">
