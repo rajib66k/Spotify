@@ -617,7 +617,7 @@ li p {
     }
 
     .playbar {
-        justify-content: flex-end;
+        padding-left: 30vw;
     }
 
     .playbar {
@@ -689,7 +689,7 @@ li p {
     }
 
     .playbar {
-        justify-content: flex-end;
+        padding-left: 25vw;
     }
 
     .playbar {
@@ -732,7 +732,7 @@ li p {
     }
 
     .playbar {
-        padding-right: 8%;
+        padding-left: 23vh;
     }
 
     .songinfo {
@@ -750,8 +750,8 @@ li p {
     }
 
     .playbar {
+        padding-left: 20vw;
         justify-content: center;
-        padding-right: 0;
     }
 }
 
