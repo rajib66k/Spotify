@@ -541,7 +541,6 @@ li p {
 
 .sec22 {
     align-items: center;
-    justify-content: center;
     gap: 22px;
     padding-top: 30px;
     display: none;
@@ -775,24 +774,82 @@ li p {
 @media (max-width: 470px) {
     .box1 {
         width: 100%;
+        background-color: black;
     }
 
-    .minibox1 {
-        height: 5vh;
-    }
-
-    .minibox2 {
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .minibox2 .card {
-        margin: 0 20px;
+    .foot {
+        bottom: 85px;
+        width: 100%;
     }
 
     .box2 {
         height: 84.5vh;
     }
+
+    .minibox1 {
+        height: 5vh;
+        min-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    .minibox1 h4 {
+        padding: 20px;
+        color: white;
+    }
+
+    .minibox2 {
+        background-color: black;
+        height: 37vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        padding: 25px 0;
+        gap: 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .minibox2 .card {
+        min-height: 135px;
+        width: 26.2vw;
+        min-width: 285px;
+        padding: 17px;
+        background-color: #1f1f1f;
+        color: white;
+        border-radius: 8px;
+        margin: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .minibox2 .card h3 {
+        font-size: 15px;
+    }
+
+    .minibox2 .card div {
+        font-size: 13px;
+        font-weight: 550;
+    }
+
+    .card div {
+        margin: 12px 0;
+    }
+
+    .card button {
+        padding: 10px 14px;
+        border-radius: 25px;
+        font-weight: 600;
+        margin: 9px 0;
+    }
+
+
+
+
+
+
+
 
     .header {
         height: 9vh;
@@ -919,7 +976,7 @@ li p {
     }
 
     .songtime {
-        right: 5px;
+        right: 1px;
         font-size: 10px;
     }
 
@@ -955,43 +1012,6 @@ li p {
         margin: 0 0 0 5px;
     }
 
-
-
-
-
-
-
-    .minibox2 .card {
-        min-height: 135px;
-        width: 26.2vw;
-        min-width: 285px;
-        padding: 17px;
-        background-color: #1f1f1f;
-        color: white;
-        border-radius: 8px;
-        margin: 0 40px;
-        box-sizing: border-box;
-    }
-
-    .minibox2 .card h3 {
-        font-size: 15px;
-    }
-
-    .minibox2 .card div {
-        font-size: 13px;
-        font-weight: 550;
-    }
-
-    .card div {
-        margin: 12px 0;
-    }
-
-    .card button {
-        padding: 10px 14px;
-        border-radius: 25px;
-        font-weight: 600;
-        margin: 9px 0;
-    }
 
 
 
