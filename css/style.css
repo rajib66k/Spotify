@@ -462,24 +462,11 @@ li p {
     box-sizing: border-box;
 }
 
-.playbarBtnSeekbar {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 35%;
-    min-width: 310px;
-}
-
 .playbarBtn {
     display: flex;
     gap: 25px;
     margin-bottom: 25px;
     cursor: pointer;
-}
-
-.proSeekbar {
-    width: 150%;
 }
 
 .seekbar {
@@ -506,21 +493,14 @@ li p {
     background-color: white;
     transition: left 0.5s;
     position: relative;
-    /* left: px; */
-}
-
-.prosongtime {
-    height: 10vh;
-    display: flex;
-    /* justify-content: flex-end; */
-    align-items: flex-end;
-    box-sizing: border-box;
 }
 
 .songtime {
-    box-sizing: border-box;
-    margin: 15px 0;
+    color: white;
     font-size: 12px;
+    position: relative;
+    right: 0;
+    bottom: 1.2vh;
 }
 
 .songinfo {
@@ -815,13 +795,13 @@ li p {
     }
 
     .header {
-        height: 5.5vh;
+        height: 9vh;
         min-height: 45px;
     }
 
     .icon {
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
         margin-left: 15px;
         margin-right: 8px;
     }
@@ -838,7 +818,7 @@ li p {
     }
 
     .hamburger img {
-        height: 20px;
+        height: 25px;
     }
 
     .search {
@@ -851,16 +831,20 @@ li p {
     }
 
     .msearch img {
-        height: 20px;
+        height: 25px;
     }
 
     .notification {
         margin: 0 15px;
     }
 
+    .notification img {
+        height: 20px;
+    }
+
     .account {
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         background-color: black;
         border-radius: 200px;
         margin: 0px;
@@ -871,8 +855,8 @@ li p {
     }
 
     .account h4 {
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         background-color: rgb(250, 102, 48);
         border-radius: 100px;
     }
@@ -898,20 +882,10 @@ li p {
         box-sizing: border-box;
     }
 
-    .playbarBtnSeekbar {
-        display: flex;
-        align-items: normal;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 77%;
-        min-width: 310px;
-    }
-
     .playbarBtn {
         display: flex;
         gap: 25px;
         margin-bottom: 15px;
-        margin-left: 32vw;
         cursor: pointer;
     }
 
@@ -931,7 +905,6 @@ li p {
         border-radius: 40px;
         z-index: 1000000;
         display: flex;
-        /* align-items: center; */
         justify-content: space-between;
         cursor: pointer;
     }
@@ -943,19 +916,10 @@ li p {
         background-color: white;
         transition: left 0.5s;
         position: relative;
-        /* left: px; */
-    }
-
-    .prosongtime {
-        height: 3vh;
-        display: flex;
-        align-items: flex-end;
-        box-sizing: border-box;
     }
 
     .songtime {
-        box-sizing: border-box;
-        margin: 0px;
+        right: 5px;
         font-size: 10px;
     }
 
