@@ -1,0 +1,19 @@
+.invert {
+    filter: invert(1);
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide-scrollbar {
+  overflow: auto;                 /* Enables scrolling */
+  -ms-overflow-style: none;      /* Hides scrollbar in IE and Edge */
+  scrollbar-width: none;         /* Hides scrollbar in Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;                 /* Hides scrollbar in Chrome, Safari, and Opera */
+}
